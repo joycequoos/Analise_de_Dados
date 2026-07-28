@@ -26,7 +26,7 @@ Conteúdo relacionado: [Como surge a análise de dados?](https://github.com/joyc
 
 | Recurso | Descrição |
 |---|---|
-| [Instalando Anaconda / Jupyter Notebook](https://github.com/JosiTubaroski/Analise_de_Dados/blob/main/Instalacoes/1.%20Instalando%20o%20Jupyter%20-%20Pacote%20Anaconda%20para%20Programa%C3%A7%C3%A3o%20em%20Python.ipynb) | Passo a passo para configurar o Anaconda e o Jupyter Notebook. |
+| [Instalando Anaconda / Jupyter Notebook](https://github.com/joycequoos/Analise_de_Dados/blob/main/Instalacoes/1.%20Instalando%20o%20Jupyter%20-%20Pacote%20Anaconda%20para%20Programa%C3%A7%C3%A3o%20em%20Python.ipynb) | Passo a passo para configurar o Anaconda e o Jupyter Notebook. |
 
 ### 2. Dashboards (Power BI)
 
@@ -38,20 +38,20 @@ Conteúdo relacionado: [Como surge a análise de dados?](https://github.com/joyc
 
 | Recurso | Descrição |
 |---|---|
-| [Criando um novo Jupyter Notebook](https://github.com/JosiTubaroski/Analise_de_Dados/blob/main/NovoNote/01%20-%20Criar%20um%20Novo%20Notebook.ipynb) | Guia inicial para criar e configurar um notebook do zero. |
-| [Exercícios Jupyter Notebook](https://github.com/JosiTubaroski/Jupyter-exercises) | Lista de exercícios práticos para consolidar o uso do Jupyter. |
+| [Criando um novo Jupyter Notebook](https://github.com/joycequoos/Analise_de_Dados/blob/main/NovoNote/01%20-%20Criar%20um%20Novo%20Notebook.ipynb) | Guia inicial para criar e configurar um notebook do zero. |
+| [Exercícios Jupyter Notebook](https://github.com/joycequoos/Jupyter-exercises) | Lista de exercícios práticos para consolidar o uso do Jupyter. |
 
 ### 4. Relatórios com Python / Matplotlib
 
 | Recurso | Descrição |
 |---|---|
 | [Galeria de modelos — Matplotlib](https://matplotlib.org/stable/gallery/index.html) | Referência oficial com exemplos de gráficos da biblioteca. |
-| [Exemplo: Gráfico de Barras Horizontal](https://github.com/JosiTubaroski/Analise_de_Dados/blob/main/Horizontal_Bar_Chart/02_Grafico_Horizontal_Bar_Chart.ipynb) | Notebook demonstrando a criação de um gráfico de barras horizontais. |
-| [Exercícios — Relatórios com Jupyter Notebook](https://github.com/JosiTubaroski/Jupyter_Relatorios_Matplotlib) | Exercícios práticos de geração de relatórios visuais. |
+| [Exemplo: Gráfico de Barras Horizontal](https://github.com/joycequoos/Analise_de_Dados/blob/main/Horizontal_Bar_Chart/02_Grafico_Horizontal_Bar_Chart.ipynb) | Notebook demonstrando a criação de um gráfico de barras horizontais. |
+| [Exercícios — Relatórios com Jupyter Notebook](https://github.com/joycequoos/Jupyter_Relatorios_Matplotlib) | Exercícios práticos de geração de relatórios visuais. |
 
 ## Conteúdo exclusivo
 
-Materiais adicionais, disponíveis separadamente: [Conteúdo exclusivo](https://github.com/JosiTubaroski/Analise_de_Dados_Exclusivo)
+Materiais adicionais, disponíveis separadamente: [Conteúdo exclusivo](https://github.com/joycequoos/Analise_de_Dados_Exclusivo)
 
 ## Contato
 
