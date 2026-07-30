@@ -37,7 +37,7 @@ Conteúdo relacionado: [Como surge a análise de dados?](https://github.com/joyc
 
 | Recurso | Descrição |
 |---|---|
-| [Criando um novo Jupyter Notebook](https://github.com/joycequoos/Analise_de_Dados/blob/main/NovoNote/01%20-%20Criar%20um%20Novo%20Notebook.ipynb) | Guia inicial para criar e configurar um notebook do zero. |
+| [Criando um novo Jupyter Notebook](https://github.com/joycequoos/Analise_de_Dados/blob/main/NovoNote/README.md) | Guia inicial para criar e configurar um notebook do zero. |
 | [Exercícios Jupyter Notebook](https://github.com/joycequoos/Jupyter-exercises) | Lista de exercícios práticos para consolidar o uso do Jupyter. |
 
 ### 4. Relatórios com Python / Matplotlib
