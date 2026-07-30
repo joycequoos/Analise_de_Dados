@@ -25,7 +25,7 @@ Conteúdo relacionado: [Como surge a análise de dados?](https://github.com/joyc
 
 | Recurso | Descrição |
 |---|---|
-| [Instalando Anaconda / Jupyter Notebook](https://github.com/joycequoos/Analise_de_Dados/blob/main/Instalacoes/1.%20Instalando%20o%20Jupyter%20-%20Pacote%20Anaconda%20para%20Programa%C3%A7%C3%A3o%20em%20Python.ipynb) | Passo a passo para configurar o Anaconda e o Jupyter Notebook. |
+| [Instalando Anaconda / Jupyter Notebook](https://github.com/joycequoos/Analise_de_Dados/blob/main/Instalacoes/README.md) | Passo a passo para configurar o Anaconda e o Jupyter Notebook. |
 
 ### 2. Dashboards (Power BI)
 
