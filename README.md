@@ -46,7 +46,9 @@ Conteúdo relacionado: [Como surge a análise de dados?](https://github.com/joyc
 |---|---|
 | [Galeria de modelos — Matplotlib](https://matplotlib.org/stable/gallery/index.html) | Referência oficial com exemplos de gráficos da biblioteca. |
 | [Exemplo: Gráfico de Barras Horizontal](https://github.com/joycequoos/Analise_de_Dados/blob/main/Horizontal_Bar_Chart/02_Grafico_Horizontal_Bar_Chart.ipynb) | Notebook demonstrando a criação de um gráfico de barras horizontais. |
-| [Exercícios — Relatórios com Jupyter Notebook](https://github.com/joycequoos/Jupyter_Relatorios_Matplotlib) | Exercícios práticos de geração de relatórios visuais. |
+| [Exercícios — Relatórios com Jupyter Notebook](https://github.com/joycequoos/Jupyter_Relatorios_Matplotlib/blob/main/README.md) | Exercícios práticos de geração de relatórios visuais. |
+
+
 
 ## Conteúdo exclusivo
 
