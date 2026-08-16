@@ -2,6 +2,8 @@
 
 Passo a passo de uma DAG simples do Apache Airflow que lê um arquivo `.csv` com `pandas` e imprime as primeiras linhas no log — um bom ponto de partida para entender a estrutura básica de uma DAG antes de evoluir para tarefas mais complexas (carga em banco, transformações, etc.).
 
+Arquivo original: [`Dag_Ler_Arquivo_CSV.py`](https://github.com/joycequoos/Analise_de_Dados/blob/main/Airflow/Dag_Ler_Arquivo_CSV.py)
+
 ## Índice
 
 - [Visão geral da DAG](#visão-geral-da-dag)
