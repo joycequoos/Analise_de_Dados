@@ -1,49 +1,49 @@
-# Instalando o Jupyter Notebook — Pacote Anaconda para Programação em Python
+# Installing Jupyter Notebook — Anaconda Package for Python Programming
 
-[← Voltar](https://github.com/joycequoos/Analise_de_Dados/blob/main/README.md)
+[← Back](https://github.com/joycequoos/Analise_de_Dados/blob/main/README.md)
 
-## Sobre o Jupyter
+## About Jupyter
 
-O Jupyter Notebook é uma poderosa ferramenta interativa para desenvolvimento, execução e compartilhamento de código em várias linguagens de programação, amplamente utilizada com Python e R. Sua principal finalidade é fornecer um ambiente colaborativo e iterativo para análise, visualização, modelagem estatística, simulações, aprendizado de máquina e muito mais. É frequentemente utilizado por cientistas de dados, pesquisadores, engenheiros e profissionais que trabalham com análise numérica e computacional.
+Jupyter Notebook is a powerful interactive tool for developing, running, and sharing code in multiple programming languages, widely used with Python and R. Its main purpose is to provide a collaborative, iterative environment for analysis, visualization, statistical modeling, simulations, machine learning, and more. It's commonly used by data scientists, researchers, engineers, and professionals working with numerical and computational analysis.
 
-### Principais funcionalidades
+### Key features
 
-- **Ambiente interativo** — permite escrever e executar códigos em células individuais, facilitando a experimentação e a visualização dos resultados em tempo real, o que torna o desenvolvimento mais dinâmico.
-- **Documentação interativa** — além de código, é possível adicionar texto explicativo, fórmulas matemáticas, gráficos, imagens e outros elementos ricos em mídia nas células, facilitando a criação de documentos interativos e relatórios claros.
-- **Visualização de dados** — suporta bibliotecas populares como Matplotlib e Seaborn, permitindo criar gráficos, plots e dashboards interativos.
-- **Aprendizado de máquina e ciência de dados** — possibilita criar modelos, executar análises estatísticas e explorar dados de forma interativa, com resultados visíveis imediatamente.
-- **Compartilhamento** — os notebooks podem ser compartilhados facilmente, seja pelo próprio arquivo ou por serviços como GitHub, Google Colab ou nbviewer.
-- **Execução em ambientes diversos** — por ser baseado na web, pode ser executado localmente, em servidores na nuvem ou em ambientes virtualizados.
+- **Interactive environment** — allows writing and running code in individual cells, making experimentation and real-time result visualization easier, which makes development more dynamic.
+- **Interactive documentation** — besides code, you can add explanatory text, mathematical formulas, charts, images, and other rich media elements to cells, making it easy to create interactive documents and clear reports.
+- **Data visualization** — supports popular libraries like Matplotlib and Seaborn, allowing you to create charts, plots, and interactive dashboards.
+- **Machine learning and data science** — enables building models, running statistical analyses, and exploring data interactively, with results visible immediately.
+- **Sharing** — notebooks can be easily shared, either as files or through services like GitHub, Google Colab, or nbviewer.
+- **Runs across environments** — being web-based, it can run locally, on cloud servers, or in virtualized environments.
 
-O Jupyter Notebook se tornou uma ferramenta essencial para a comunidade de ciência de dados e programadores, por sua flexibilidade, interatividade e capacidade de combinar código, visualizações e explicações em um único ambiente colaborativo.
+Jupyter Notebook has become an essential tool for the data science and programming community due to its flexibility, interactivity, and ability to combine code, visualizations, and explanations in a single collaborative environment.
 
-## Passo a Passo da Instalação
+## Installation Step-by-Step
 
-### 1. Instalando o Pacote Anaconda
+### 1. Installing the Anaconda Package
 
-O Jupyter Notebook é instalado através do Anaconda, uma distribuição gratuita que já reúne Python, Jupyter e as principais bibliotecas de ciência de dados.
+Jupyter Notebook is installed through Anaconda, a free distribution that already bundles Python, Jupyter, and the main data science libraries.
 
-### 2. Acessar o site do Anaconda
+### 2. Visit the Anaconda website
 
-Acesse o site [anaconda.com](https://www.anaconda.com/) e, em seguida, acesse a seção Downloads.
+Go to [anaconda.com](https://www.anaconda.com/) and then head to the Downloads section.
 
 ![Anaconda](Anaconda.GIF)
 
-### 3. Realizar o download
+### 3. Download the installer
 
-Escolha a versão compatível com o seu sistema operacional e realize o download do instalador.
+Choose the version compatible with your operating system and download the installer.
 
 ![Download Anaconda](download_anaconda.GIF)
 
-### 4. Iniciar a instalação
+### 4. Start the installation
 
-Após o download, execute o instalador para dar início ao processo de instalação.
+After the download, run the installer to begin the installation process.
 
 ![Instalando Anaconda](Instalando_Anaconda.GIF)
 
-### 5. Seguir as etapas do instalador
+### 5. Follow the installer steps
 
-Prossiga pelas etapas indicadas pelo assistente de instalação.
+Proceed through the steps indicated by the installation wizard.
 
 ![Instalando Anaconda 2](Instalando_Anaconda_2.GIF)
 
@@ -53,36 +53,36 @@ Prossiga pelas etapas indicadas pelo assistente de instalação.
 
 ![Instalando Anaconda 5](Instalando_Anaconda_5.GIF)
 
-### 6. Aguardar a conclusão
+### 6. Wait for it to finish
 
-O processo de instalação pode demorar alguns minutos.
+The installation process may take a few minutes.
 
 ![Instalando Anaconda 6](Instalando_Anaconda_6.GIF)
 
-## Verificando a Instalação
+## Verifying the Installation
 
-### 1. Verificar pelo Anaconda Prompt
+### 1. Check via Anaconda Prompt
 
-Após finalizar a instalação, selecione **Iniciar** no computador e digite "Prompt". Deve aparecer o **Anaconda Prompt** na lista de aplicativos.
+After the installation is complete, click **Start** on your computer and type "Prompt." The **Anaconda Prompt** should appear in the app list.
 
 ![Prompt Anaconda](Prompt_Anaconda.GIF)
 
-### 2. Verificar pelo Jupyter
+### 2. Check via Jupyter
 
-Outra forma de verificação é digitar "Jupyter" no menu Iniciar — o aplicativo **Jupyter Notebook** deve aparecer na lista.
+Another way to verify is by typing "Jupyter" in the Start menu — the **Jupyter Notebook** app should appear in the list.
 
 ![Jupyter Aplicativo](Jupyter_Aplicativo.GIF)
 
-## Executando o Jupyter Notebook
+## Running Jupyter Notebook
 
-### 1. Abrir o Jupyter Notebook
+### 1. Open Jupyter Notebook
 
-Selecione o **Jupyter Notebook** duas vezes na lista de aplicativos para executá-lo.
+Double-click **Jupyter Notebook** in the app list to launch it.
 
 ![Executar Jupyter Notebook](Executar_Jupyter_Notebook.GIF)
 
-### 2. Jupyter aberto no navegador
+### 2. Jupyter opens in the browser
 
-O Jupyter Notebook será aberto automaticamente no seu navegador padrão, pronto para uso.
+Jupyter Notebook will open automatically in your default browser, ready to use.
 
 ![Jupyter Aberto no Navegador](Jupyter_Aberto_Navegador.GIF)
