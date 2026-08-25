@@ -1,59 +1,55 @@
+[← Back to Data Portfolio](https://github.com/joycequoos/Principal_Data/blob/main/README.md)
 
-[← Voltar ao Portfólio de Dados](https://github.com/joycequoos/Principal_Data/blob/main/README.md)
+# Data Analysis
 
+Reference repository with projects, notebooks, and dashboards focused on learning and practicing data analysis — covering everything from environment setup to building reports and visualizations.
 
-# Análise de Dados
+## About the project
 
-Repositório de referência com projetos, notebooks e dashboards voltados para o aprendizado e a prática de análise de dados, cobrindo desde a configuração do ambiente até a construção de relatórios e visualizações.
+This repository gathers materials organized by topic — tool installation, notebook creation, chart and dashboard building — serving as an incremental study guide for those developing data analysis skills with Python and Power BI.
 
-## Sobre o projeto
+Related content: [How does data analysis come about?](https://github.com/joycequoos/Como-surge-a-analise-de-dados/blob/main/README.md)
 
-Este repositório reúne materiais organizados por tema — instalação de ferramentas, criação de notebooks, construção de gráficos e dashboards — servindo como um guia de estudo incremental para quem está desenvolvendo habilidades em análise de dados com Python e Power BI.
+## Technologies used
 
-Conteúdo relacionado: [Como surge a análise de dados?](https://github.com/joycequoos/Como-surge-a-analise-de-dados/blob/main/README.md)
+- **Python** — main language for data processing and analysis
+- **Jupyter Notebook** (via Anaconda) — interactive development environment
+- **Matplotlib** — chart and visual report generation
+- **Power BI** — interactive dashboard building
 
-## Tecnologias utilizadas
+## Content structure
 
-- **Python** — linguagem principal para tratamento e análise de dados
-- **Jupyter Notebook** (via Anaconda) — ambiente de desenvolvimento interativo
-- **Matplotlib** — geração de gráficos e relatórios visuais
-- **Power BI** — construção de dashboards interativos
+### 1. Environment setup
 
-## Estrutura do conteúdo
-
-### 1. Instalação do ambiente
-
-| Recurso | Descrição |
+| Resource | Description |
 |---|---|
-| [Instalando Anaconda / Jupyter Notebook](https://github.com/joycequoos/Analise_de_Dados/blob/main/Instalacoes/README.md) | Passo a passo para configurar o Anaconda e o Jupyter Notebook. |
+| [Installing Anaconda / Jupyter Notebook](https://github.com/joycequoos/Analise_de_Dados/blob/main/Instalacoes/README.md) | Step-by-step guide to setting up Anaconda and Jupyter Notebook. |
 
 ### 2. Dashboards (Power BI)
 
-| Recurso | Descrição |
+| Resource | Description |
 |---|---|
-| [Exemplo de Dashboard de Vendas](https://app.powerbi.com/view?r=eyJrIjoiYmMwNTY5YTUtYjhkMi00NDJhLTgyNWYtODFhZjEwNTgyNTEzIiwidCI6IjA5ZGM2NmU5LTViNGYtNDA4My04MWM1LWZmODU2YjM3Mjc0MyJ9) | Dashboard interativo com indicadores de vendas. |
+| [Sales Dashboard Example](https://app.powerbi.com/view?r=eyJrIjoiYmMwNTY5YTUtYjhkMi00NDJhLTgyNWYtODFhZjEwNTgyNTEzIiwidCI6IjA5ZGM2NmU5LTViNGYtNDA4My04MWM1LWZmODU2YjM3Mjc0MyJ9) | Interactive dashboard with sales indicators. |
 
 ### 3. Jupyter Notebook
 
-| Recurso | Descrição |
+| Resource | Description |
 |---|---|
-| [Criando um novo Jupyter Notebook](https://github.com/joycequoos/Analise_de_Dados/blob/main/NovoNote/README.md) | Guia inicial para criar e configurar um notebook do zero. |
-| [Exercícios Jupyter Notebook](https://github.com/joycequoos/Jupyter-exercises/blob/main/README.md) | Lista de exercícios práticos para consolidar o uso do Jupyter. |
+| [Creating a new Jupyter Notebook](https://github.com/joycequoos/Analise_de_Dados/blob/main/NovoNote/README.md) | Getting-started guide to creating and setting up a notebook from scratch. |
+| [Jupyter Notebook Exercises](https://github.com/joycequoos/Jupyter-exercises/blob/main/README.md) | List of hands-on exercises to reinforce Jupyter usage. |
 
-### 4. Relatórios com Python / Matplotlib
+### 4. Reports with Python / Matplotlib
 
-| Recurso | Descrição |
+| Resource | Description |
 |---|---|
-| [Galeria de modelos — Matplotlib](https://matplotlib.org/stable/gallery/index.html) | Referência oficial com exemplos de gráficos da biblioteca. |
-| [Exemplo: Gráfico de Barras Horizontal](https://github.com/joycequoos/Analise_de_Dados/blob/main/Horizontal_Bar_Chart/02_Grafico_Horizontal_Bar_Chart.ipynb) | Notebook demonstrando a criação de um gráfico de barras horizontais. |
-| [Exercícios — Relatórios com Jupyter Notebook](https://github.com/joycequoos/Jupyter_Relatorios_Matplotlib/blob/main/README.md) | Exercícios práticos de geração de relatórios visuais. |
+| [Gallery of examples — Matplotlib](https://matplotlib.org/stable/gallery/index.html) | Official reference with chart examples from the library. |
+| [Example: Horizontal Bar Chart](https://github.com/joycequoos/Analise_de_Dados/blob/main/Horizontal_Bar_Chart/02_Grafico_Horizontal_Bar_Chart.ipynb) | Notebook demonstrating how to create a horizontal bar chart. |
+| [Exercises — Reports with Jupyter Notebook](https://github.com/joycequoos/Jupyter_Relatorios_Matplotlib/blob/main/README.md) | Hands-on exercises for generating visual reports. |
 
+## Exclusive content
 
+Additional materials, available separately: [Exclusive content](https://github.com/joycequoos/Analise_de_Dados_Exclusivo)
 
-## Conteúdo exclusivo
+## Contact
 
-Materiais adicionais, disponíveis separadamente: [Conteúdo exclusivo](https://github.com/joycequoos/Analise_de_Dados_Exclusivo)
-
-## Contato
-
-Dúvidas, sugestões ou colaborações são bem-vindas — sinta-se à vontade para abrir uma *issue* ou entrar em contato através do perfil do GitHub.
+Questions, suggestions, or collaborations are welcome — feel free to open an *issue* or reach out through my GitHub profile.
