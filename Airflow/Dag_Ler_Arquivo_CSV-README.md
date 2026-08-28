@@ -1,52 +1,52 @@
-# DAG — Leitura de Arquivo CSV no Airflow
+# DAG — Reading a CSV File in Airflow
 
-[← Voltar a Engenharia de Dados](https://github.com/joycequoos/Data_Enginer/blob/main/README.md)
+[← Back to Data Engineering](https://github.com/joycequoos/Data_Enginer/blob/main/README.md)
 
-Passo a passo de uma DAG simples do Apache Airflow que lê um arquivo `.csv` com `pandas` e imprime as primeiras linhas no log — um bom ponto de partida para entender a estrutura básica de uma DAG antes de evoluir para tarefas mais complexas (carga em banco, transformações, etc.).
+Step-by-step walkthrough of a simple Apache Airflow DAG that reads a `.csv` file with `pandas` and prints the first rows to the log — a good starting point for understanding the basic structure of a DAG before moving on to more complex tasks (loading into a database, transformations, etc.).
 
-Arquivo original: [`Dag_Ler_Arquivo_CSV.py`](https://github.com/joycequoos/Analise_de_Dados/blob/main/Airflow/Dag_Ler_Arquivo_CSV.py)
+Original file: [`Dag_Ler_Arquivo_CSV.py`](https://github.com/joycequoos/Analise_de_Dados/blob/main/Airflow/Dag_Ler_Arquivo_CSV.py)
 
-## Índice
+## Table of Contents
 
-- [Visão geral da DAG](#visão-geral-da-dag)
-- [Passo 1 — Importações](#passo-1--importações)
-- [Passo 2 — Função que lê o CSV](#passo-2--função-que-lê-o-csv)
-- [Passo 3 — Argumentos padrão da DAG](#passo-3--argumentos-padrão-da-dag)
-- [Passo 4 — Definindo a DAG](#passo-4--definindo-a-dag)
-- [Passo 5 — Definindo a tarefa (task)](#passo-5--definindo-a-tarefa-task)
-- [Passo 6 — Ordem de execução](#passo-6--ordem-de-execução)
-- [Próximos passos](#próximos-passos)
+- [DAG Overview](#dag-overview)
+- [Step 1 — Imports](#step-1--imports)
+- [Step 2 — Function that reads the CSV](#step-2--function-that-reads-the-csv)
+- [Step 3 — DAG default arguments](#step-3--dag-default-arguments)
+- [Step 4 — Defining the DAG](#step-4--defining-the-dag)
+- [Step 5 — Defining the task](#step-5--defining-the-task)
+- [Step 6 — Execution order](#step-6--execution-order)
+- [Next steps](#next-steps)
 
 ---
 
-## Visão geral da DAG
+## DAG Overview
 
-| Item | Valor |
-| --- | --- |
-| **Nome da DAG** | `read_csv_dag_latin` |
-| **Arquivo lido** | `/opt/airflow/data/cliente_20231019.csv` |
-| **Delimitador** | `;` |
-| **Codificação** | `latin1` |
-| **Agendamento** | `@once` (executa uma única vez) |
-| **Tarefa** | `read_csv_task` |
+| Item             | Value                                    |
+| ---------------- | ---------------------------------------- |
+| **DAG name**     | `read_csv_dag_latin`                     |
+| **File read**    | `/opt/airflow/data/cliente_20231019.csv` |
+| **Delimiter**    | `;`                                      |
+| **Encoding**     | `latin1`                                 |
+| **Schedule**     | `@once` (runs a single time)             |
+| **Task**         | `read_csv_task`                          |
 
-## Passo 1 — Importações
+## Step 1 — Imports
 
-```python
+```
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 import pandas as pd
 from datetime import datetime
 ```
 
-- `DAG` — classe usada para criar e configurar a DAG.
-- `PythonOperator` — operador que permite executar uma função Python como uma tarefa do Airflow.
-- `pandas` — usado para ler e manipular o arquivo `.csv`.
-- `datetime` — usado para definir a data de início da DAG.
+- `DAG` — class used to create and configure the DAG.
+- `PythonOperator` — operator that allows a Python function to be run as an Airflow task.
+- `pandas` — used to read and manipulate the `.csv` file.
+- `datetime` — used to define the DAG's start date.
 
-## Passo 2 — Função que lê o CSV
+## Step 2 — Function that reads the CSV
 
-```python
+```
 def read_csv_file():
     file_path = "/opt/airflow/data/cliente_20231019.csv"
 
@@ -58,16 +58,16 @@ def read_csv_file():
     print(df.head())
 ```
 
-Essa é a função que efetivamente faz o trabalho:
+This is the function that actually does the work:
 
-1. Define o **caminho do arquivo** dentro do contêiner do Airflow (`/opt/airflow/data/...`).
-2. Define os **nomes das colunas** manualmente, já que o CSV não tem cabeçalho.
-3. Lê o arquivo com `pandas.read_csv()`, usando `;` como delimitador e `latin1` como codificação — importante para arquivos com acentuação que não estejam em UTF-8.
-4. Imprime as **5 primeiras linhas** do DataFrame (`df.head()`) no log da tarefa, apenas para validar que a leitura funcionou.
+1. Sets the **file path** inside the Airflow container (`/opt/airflow/data/...`).
+2. Sets the **column names** manually, since the CSV has no header.
+3. Reads the file with `pandas.read_csv()`, using `;` as the delimiter and `latin1` as the encoding — important for files with accented characters that aren't in UTF-8.
+4. Prints the **first 5 rows** of the DataFrame (`df.head()`) to the task log, just to confirm the read worked.
 
-## Passo 3 — Argumentos padrão da DAG
+## Step 3 — DAG default arguments
 
-```python
+```
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
@@ -79,19 +79,19 @@ default_args = {
 }
 ```
 
-| Argumento | Valor | O que significa |
-| --- | --- | --- |
-| `owner` | `'airflow'` | Nome do responsável pela DAG, exibido na interface do Airflow |
-| `depends_on_past` | `False` | A execução atual não depende do sucesso da execução anterior |
-| `start_date` | `datetime(2024, 3, 7)` | Data a partir da qual a DAG pode começar a ser agendada |
-| `email_on_failure` | `False` | Não envia e-mail em caso de falha |
-| `email_on_retry` | `False` | Não envia e-mail a cada nova tentativa |
-| `retries` | `1` | Tenta executar a tarefa novamente 1 vez em caso de falha |
-| `tags` | `['ETL']` | Etiqueta usada para organizar e filtrar DAGs na interface do Airflow |
+| Argument           | Value                  | What it means                                                        |
+| ------------------ | ---------------------- | ---------------------------------------------------------------------|
+| `owner`            | `'airflow'`            | Name of the person responsible for the DAG, shown in the Airflow UI  |
+| `depends_on_past`  | `False`                | The current run does not depend on the success of the previous run  |
+| `start_date`       | `datetime(2024, 3, 7)` | Date from which the DAG can start being scheduled                   |
+| `email_on_failure` | `False`                | Does not send an email on failure                                   |
+| `email_on_retry`   | `False`                | Does not send an email on each retry                                |
+| `retries`          | `1`                    | Retries the task once if it fails                                   |
+| `tags`             | `['ETL']`              | Tag used to organize and filter DAGs in the Airflow UI               |
 
-## Passo 4 — Definindo a DAG
+## Step 4 — Defining the DAG
 
-```python
+```
 dag = DAG(
     'read_csv_dag_latin',
     default_args=default_args,
@@ -100,16 +100,16 @@ dag = DAG(
 )
 ```
 
-Cria o objeto `DAG`, associando:
+Creates the `DAG` object, combining:
 
-- O **nome** (`read_csv_dag_latin`), que identifica a DAG na interface do Airflow.
-- Os **argumentos padrão** definidos no passo anterior.
-- Uma **descrição** explicando o propósito da DAG.
-- O **intervalo de agendamento** (`@once`) — ou seja, ela roda uma única vez, e não em um cron recorrente.
+- The **name** (`read_csv_dag_latin`), which identifies the DAG in the Airflow UI.
+- The **default arguments** defined in the previous step.
+- A **description** explaining the DAG's purpose.
+- The **schedule interval** (`@once`) — meaning it runs a single time, rather than on a recurring cron schedule.
 
-## Passo 5 — Definindo a tarefa (task)
+## Step 5 — Defining the task
 
-```python
+```
 read_csv_task = PythonOperator(
     task_id='read_csv_task',
     python_callable=read_csv_file,
@@ -117,23 +117,23 @@ read_csv_task = PythonOperator(
 )
 ```
 
-Cria a tarefa `read_csv_task`, do tipo `PythonOperator`, que:
+Creates the `read_csv_task` task, of type `PythonOperator`, which:
 
-- Recebe um `task_id` único dentro da DAG.
-- Aponta, via `python_callable`, para a função `read_csv_file` definida no passo 2 — é essa função que será executada quando a tarefa rodar.
-- É associada à DAG criada no passo anterior (`dag=dag`).
+- Receives a unique `task_id` within the DAG.
+- Points, via `python_callable`, to the `read_csv_file` function defined in step 2 — this is the function that will be executed when the task runs.
+- Is linked to the DAG created in the previous step (`dag=dag`).
 
-## Passo 6 — Ordem de execução
+## Step 6 — Execution order
 
-```python
+```
 read_csv_task
 ```
 
-Como essa DAG tem apenas **uma tarefa**, não é necessário definir dependências entre tarefas (como `tarefa_a >> tarefa_b`) — a própria referência à tarefa no final do arquivo já é suficiente para o Airflow reconhecê-la como parte do grafo de execução da DAG.
+Since this DAG has only **one task**, there's no need to define dependencies between tasks (like `task_a >> task_b`) — simply referencing the task at the end of the file is enough for Airflow to recognize it as part of the DAG's execution graph.
 
-## Próximos passos
+## Next steps
 
-- Adicionar uma segunda tarefa que carregue os dados lidos em uma tabela do banco de dados, encadeando-a com `>>`.
-- Trocar `schedule_interval='@once'` por um agendamento recorrente (ex.: `'@daily'`) quando a DAG for para produção.
-- Adicionar tratamento de erros na leitura do CSV (arquivo ausente, colunas divergentes, etc.).
-- Parametrizar o caminho do arquivo e a data de referência em vez de deixá-los fixos no código (ex.: usando `Variable` ou `{{ ds_nodash }}` do Airflow).
+- Add a second task that loads the read data into a database table, chaining it with `>>`.
+- Replace `schedule_interval='@once'` with a recurring schedule (e.g., `'@daily'`) once the DAG goes to production.
+- Add error handling for the CSV read (missing file, mismatched columns, etc.).
+- Parameterize the file path and reference date instead of hardcoding them (e.g., using Airflow's `Variable` or `{{ ds_nodash }}`).
